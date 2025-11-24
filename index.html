@@ -3,21 +3,225 @@
 <head>
 <meta charset="utf-8">
 <title>タイトル</title>
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Micro+5&family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <!--jQuery本体-->
-<script src="js/jquery-1.11.2.min.js"></script>
+  <!--TOP動き-->
+  <script src="../js/jquery-1.11.2.min.js"></script><!-- 必ず上に -->
+  <script src="../js/t.js-master/t.min.js"></script>
 
-<!--ready関数-->
-<script>
-$(function(){
+  <!--ハンバーガーメニュー-->
+  <link href="../js/js/drawer-master/dist/css/drawer.css" rel="stylesheet">
+  <script src="../js/js/drawer-master/dist/js/drawer.min.js">
+  </script>
 
-});
-</script>
+  <!--ready関数-->
+  <script>
+    $(function () {
+
+    });
+  </script>
+  <!--TOP動き関数-->
+  <script type="text/javascript">
+    $(function () {
+      $('#Ttext').t({
+        speed: 60,//60ミリ秒
+        speed_vary: true,//人間のようなタイピング動作にする
+        blink_perm: false,//常に点滅しない(終了時のみ)
+      });
+    });
+  </script>
+  <!--ハンバーガーメニュ関数ー-->
+  <script>
+    $(function () {
+      $('.drawer').drawer();
+    });
+  </script>
+
+  <!--iscroll-->
+<script src="../js/js/iscroll-master/build/iscroll.js"></script>
+
+
+ 
 
 </head>
 
 <body>
+
+
+  <!--about-->
+    <section class="abaut_main_top">
+      <div class="section_line">
+      <h1>------about------</h1>
+      </div>
+        <div class="about_main">
+            <div class="about_img_main">
+              <img src="../img/about_1.png" width="670px" height="650px" alt="私の写真">
+            </div>
+            <div class="about_img_sub">
+              <div class="about_name">
+                <h2>takaya</h2> 
+              </div>
+              <div class="description-text">
+                <p>
+                  1992年生まれ。東京在住。（大分県出身）<br>
+                  色合いや色のバランス、言葉の温度を大切に。<br>
+                  伝えたい想いを、美しく、やさしく、<br>
+                  心に届く形にデザインしていきます。<br>
+                  Webデザイン、SNSデザイン、POP作成など<br>
+                  親しみのあるデザインで制作いたします。
+                </p>
+              </div>
+            </div>
+        </div>
+    </section> 
+
+    <!--Likeandhobby-->
+    <section class="about_like">
+      <div class="section_line likeandhobby">
+      <h1>------Likeandhobby------
+      </h1>
+      </div>
+            <div class="abaut_in_line3">
+            <p>読書・食べること・塗り絵・アニメ鑑賞・歩くこと</p>
+            </div>
+            <div class="fuwafuwa-wrapper">
+              <div class="fuwafuwa_nurie"></div>
+              <div class="fuwafuwa_ra-menn"></div>
+              <div class="fuwafuwa_book"></div>
+              <div class="fuwafuwa_me"></div>
+            </div>
+            <div class="abaut_in_line3">
+            <p>一度始めると、熱中し完成するまで行います。</p>
+            </div>
+    </section>
+
+
+    <!--skill-->
+    <section class="skill">
+      <div class="about_skill">
+        <div class="section_line skill">
+        <h1>------skill------</h1>
+        </div>
+        <div class="about_skill_1">
+          <div><img src="../img/about_ai.png" width="50px" height="50px" alt="イラストレーター"></div> 
+            <div class="circle-container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            </div>
+          <div><img src="../img/about_vs.png" width="50px" height="50px" alt="VSコード"></div> 
+            <div class="circle-container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            </div>
+          <div><img src="../img/about_html.png" width="50px" height="50px" alt="HTML "></div> 
+            <div class="circle-container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            </div>
+        </div>
+        <div class="about_skill_1">
+          <div><img src="../img/about_ps.png" width="50px" height="50px" alt="イラストレーター"></div> 
+          <div class="circle-container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            </div>
+          <div><img src="../img/about_figma.png" width="50px" height="50px" alt="フィグマ"></div> 
+          <div class="circle-container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            </div>
+          <div><img src="../img/about_css.png" width="50px" height="50px" alt="css"></div> 
+            <div class="circle-container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="about_skill_1">
+                   <div><img src="../img/about_id.png" width="50px" height="50px" alt="アイディー"></div> 
+                  <div class="circle-container">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle_sub"></div>
+                    <div class="circle_sub"></div>
+                    </div>
+                  <div><img src="../img/about _javascript.png" width="50px" height="50px" alt="ジェークエリ"></div> 
+                  <div class="circle-container">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    </div>
+                  <div class="about_sonota">
+                    <p>その他</p>
+                  </div>
+                  <div><img src="../img/about_excel.png" width="50px" height="50px" alt="ジェークエリ"></div> 
+                  <div><img src="../img/about_word.png" width="50px" height="50px" alt="ジェークエリ"></div> 
+                  <div><img src="../img/about_p.png" width="50px" height="50px" alt="ジェークエリ"></div> 
+                  <div><img src="../img/about_a.png" width="50px" height="50px" alt="ジェークエリ"></div> 
+                  <div><img src="../img/about_canva.png" width="50px" height="50px" alt="ジェークエリ"></div> 
+          </div>
+          <div class="skill_comment">
+                    <p>WEBサイト、ランディングページ（LP）、バナーのデザインを制作します。クライアントのビジョンとブランド価値を深く理解し、<br>
+                    それを魅力的に伝えるデザインを提供。ユーザー視点を重視し、直感的で使いやすいクリエイティブを心がけています。</p>
+          </div>
+        </div>
+    </section>
+
+
+
+  <div class="universaldesign">
+  <p>©︎2025takaya</p>
+  </div>
+   
+
+  <!--ハンバーガーメニュー-->
+  <body class="drawer drawer--left">
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+   <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><h1>takaya portfolio</h1></li>
+        <li><h2>----menu----</h2></li>
+        <li><div class="hamburger"><a class="drawer-menu-item" href="../index.html"><h2>top</h2></a></div></li>
+        <li><div class="hamburger"><a class="drawer-menu-item" href="../about/index.html"><h2>about</h2></a></div></li>
+        <li><div class="hamburger"><a class="drawer-menu-item" href="../work/index.html"><h2>work</h2></a></div></li>
+      </ul>
+    </nav>
+  </header>
+  <main role="main">
+    <!-- Page content -->
+  </main>
+<div class="flower">
+</div>
+</body>
 
 </body>
 
